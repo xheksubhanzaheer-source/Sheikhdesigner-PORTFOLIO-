@@ -353,10 +353,10 @@ footer {
 }
 
 .social-icons {
-  position: fixed;
+  /* position: fixed; */
   top: 40%;
   left: 20px;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .social-icons a {
@@ -483,6 +483,7 @@ body.dark {
   color: black;
     transform: translateY(-5px);
     transition: 0.5s;
+
 
 
 
