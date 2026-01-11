@@ -1,4 +1,4 @@
-* {
+* { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -83,7 +83,6 @@ nav a:hover{
   transition: 0.5s;
   box-shadow: 0 10px 40px gray;
   border: 3px solid rgb(87, 81, 81);
-
 
  .cv {
     margin: 50px;
@@ -502,4 +501,5 @@ body.dark {
 
 
 }
+
 
