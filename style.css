@@ -83,8 +83,7 @@ nav a:hover{
   transition: 0.5s;
   box-shadow: 0 10px 40px gray;
   border: 3px solid rgb(87, 81, 81);
-
- .cv {
+  .cv {
     margin: 50px;
     padding: 20px;
     border-radius: 40%;
@@ -110,9 +109,6 @@ nav a:hover{
     box-shadow: 0 15px 40px 10px rgba(223, 216, 216, 0.4);
     transform: translateY(-8px);
     /* transform: translateX(-8px); */
-
-
-
   }
 
 .section {
@@ -501,5 +497,6 @@ body.dark {
 
 
 }
+
 
 
