@@ -7,6 +7,83 @@
   max-width: 1200px;
 } */
 
+/* ======== */
+
+/* .hero1 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+} */
+
+.slide-left{
+  /* font-size: 48px; */
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(-200px);
+  transition: all 1.2s ease-out;
+}
+
+
+/* animation active state */
+.slide-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* ========= */
+
+.slide2{
+  /* font-size: 48px; */
+  /* font-weight: bold; */
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 1.2s ease-out;
+}
+
+
+/* animation active state */
+.slide2.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* ========= */
+
+.slide3{
+  /* font-size: 48px; */
+  /* font-weight: bold; */
+  opacity: 0;
+  transform: translateX(200px);
+  transition: all 1.2s ease-out;
+}
+
+
+/* animation active state */
+.slide3.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* ========= */
+
+
+.slide4{
+  /* font-size: 48px; */
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 1.2s ease-out;
+}
+
+
+/* animation active state */
+.slide4.active.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* ========= */
+
+
+
+
   ::selection {
     background-color: #000;
     color: aqua;
@@ -15,6 +92,10 @@
   body {
     background: #f4f4f4;
     color: #333;
+              /* ai  */
+      /* border: 5px solid red;  */
+
+  
   }
 
   header {
@@ -43,22 +124,40 @@
 
   }
 
-  .hero {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right, #000, #444);
-    color: white;
-    text-align: center;
-  }
+.hero { 
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #000, #444);
+  color: white;
+  text-align: center;
+}
 
-  .hero span {
-    color: orange;
-    font-size: 40px;
-    text-decoration: underline;
+.hero span {
+  color: orange;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+/* .slide-left {
+  opacity: 01;
+  transform: translateX(-150px);
+  animation: slideLeft 1.2s ease-out forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
   }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+} */
+
 
   .btn {
     margin-top: 20px;
@@ -71,25 +170,34 @@
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s, transform 0.3s;
+    
 
   }
 
   .btn:hover {
     background: rgb(240, 164, 23);
-    /* color: rgb(124, 109, 109); */
-    transform: scale (3);
+    transform: scale(1.05);
     color: rgb(0, 0, 0);
-    z-index: 20px;
+    z-index: 20;
     font-size: 19px;
-    transition: ease-out;
-    transition: 0.5s;
+    transition: all 0.5s ease-out;
     box-shadow: 0 10px 40px gray;
     border: 3px solid rgb(87, 81, 81);
+    /* transform: ; */
+    /* transform: scale3d(30deg); */
+    /* transform: rotate(0.99turn); */
+    /* transform: rotate(359.9deg); */
 
-
+    /* transform:skewY(5deg); */
+    /* float: left; */
+    
+    /* transform: scale(1.6); */
+    /* overflow: scroll; */
+  
   }
 
-/* 
+
+  /* 
   .cv {
     margin: 50px;
     padding: 20px;
@@ -103,49 +211,53 @@
     background-color: black;
     text-decoration: none;
 
-  } */
+  }
 
-  /* .cv:hover {
+  .cv:hover {
     background-color: #290000;
     transform: scale(1.05);
     transition: ease;
     /* transition :cubic-bezier(0.4, 0, 0.2, 1); */
-    /* transform-box: s; */
-    /* transition: 0.4s;
-    font-size: medium;
+  /* transform-box: s; */
+  transition: 0.4s;
+  /* font-size: medium;
     box-shadow: 0 15px 40px 10px rgba(223, 216, 216, 0.4);
     transform: translateY(-8px); */
-    /* transform: translateX(-8px); */
-  /* }  */
+  /* transform: translateX(-8px); */
+  /* } */
 
-  
-.cv {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+  .cv {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 
-  margin: 50px auto;
-  padding: 20px;
-  width: 190px;
+    margin: 50px auto;
+    padding: 20px;
+    width: 190px;
 
-  border-radius: 40px;
-  border: 2px solid white;
+    border-radius: 40px;
+    border: 2px solid white;
 
-  background-color: black;
-  color: white;
-  font-style: italic;
-  font-weight: 700;
+    background-color: black;
+    color: white;
+    font-style: italic;
+    font-weight: 700;
 
-  text-decoration: none;
-  transition: all 0.4s ease;
-}
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
 
-.cv:hover {
-  background-color: #290000;
-  transform: translateY(-8px) scale(1.05);
-  box-shadow: 0 15px 40px rgba(223, 216, 216, 0.4);
-}
+  .cv:hover {
+    background-color: #290000;
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(223, 216, 216, 0.4);
+  }
+
+
+  /* .cv:focus {
+    outline: none;
+  } */
 
   .section {
     padding: 60px 10%;
@@ -161,7 +273,7 @@
   .skills {
     display: grid;
     grid-column:
-      grid-row: 3;
+      grid-row : 3;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 
   }
@@ -507,17 +619,18 @@
   cursor: pointer;
   font-size: 16px;
 }
-/* LIGHT MODE (default) */
+/* Dark MODE (default) */
   body {
     background-color: #000000;
     color: #ffffff;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
-  /* DARK MODE */
+  /* Light MODE */
   body.dark {
     background-color: #ffffff !important;
     color: #000000 !important;
+    
   }
 
   .submit1 {
@@ -554,3 +667,35 @@
   color: black;
 } */
 
+.slide{
+  font-weight: bold;
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 1.2s ease-out;
+}
+
+
+
+/* scroll animation  */
+.scroll-animate {
+  opacity: 0;
+  transform: translateX(250px);
+  transition: all 1s ease-out;
+}
+
+.scroll-animate.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* scroll animation  */
+.scroll-animate1 {
+  opacity: 0;
+  transform: translateX(-250px);
+  transition: all 1s ease-out;
+}
+
+.scroll-animate1.active {
+  opacity: 1;
+  transform: translateX(0);
+}
